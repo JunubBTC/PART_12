@@ -1,0 +1,12 @@
+$ docker container run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+Status: Downloading newer image for ubuntu:latest
+root@b8548b9faec3:/# apt-get update
+root@b8548b9faec3:/# apt-get -y install curl
+root@b8548b9faec3:/# curl -sL https://deb.nodesource.com/setup_24.x | bash
+root@b8548b9faec3:/# apt-get -y install nodejs
+root@b8548b9faec3:/# node /usr/src/app/index.js
+Hello World
+root@b8548b9faec3:/# exit
+exit

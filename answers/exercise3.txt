@@ -1,0 +1,11 @@
+$ docker container run -it ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+Status: Downloading newer image for ubuntu:latest
+root@b8548b9faec3:/# apt-get update
+root@b8548b9faec3:/# apt-get -y install nano
+root@b8548b9faec3:/# nano /usr/src/app/index.js
+root@b8548b9faec3:/# cat /usr/src/app/index.js
+console.log('Hello World')
+root@b8548b9faec3:/# exit
+exit
